@@ -1,0 +1,33 @@
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/type' as *;
+@use '@carbon/react/scss/breakpoint' as *;
+@use '@carbon/react/scss/theme' as *;
+
+.head-content {
+    margin-top: 3rem;
+}
+.head-content__banner {
+    padding-top: $spacing-05;
+    padding-bottom: $spacing-07 * 2;
+    padding-left: $spacing-06;
+    padding-right: $spacing-06;
+    background-color: $layer-01;
+    position: relative;
+    margin-left: -20px;
+    margin-right: -20px;
+
+    @include breakpoint-down(md) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.head-content__heading {
+    margin-top: 0.75rem;
+    @include type-style('productive-heading-05');
+}
+
+.head-content__desc {
+    margin-left: 0.1rem;
+    margin-top: 0.3rem;
+}
