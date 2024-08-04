@@ -1,0 +1,59 @@
+@use "@carbon/styles/scss/colors";
+@use "@carbon/layout";
+
+@mixin greenFilled {
+    fill: green;
+}
+@mixin yellowFilled {
+    fill: #f1c21b;
+}
+@mixin redFilled {
+    fill: red;
+}
+@mixin grayFilled {
+    fill: #8f8b8b;
+}
+
+.passiveModal_iconTitleContainer_icon_success {
+    fill: colors.$green-40;
+}
+
+.passiveModal_iconTitleContainer_icon_error {
+    fill: colors.$red-50;
+}
+
+.modal_ip {
+    font-size: medium ;
+    font-weight: bold;
+}
+
+.menu-overlay {
+    z-index: 999 !important;
+}
+
+.systems-discover {
+    font-size: medium;
+}
+
+.circleGreenIcon {
+    @include greenFilled;
+    vertical-align: bottom;
+}
+
+.circleRedIcon {
+    @include redFilled;
+    vertical-align: bottom;
+}
+
+.circleYellowIcon {
+    @include yellowFilled();
+    vertical-align: bottom;
+}
+
+.add-rule {
+    margin-top: 1rem;
+}
+.add-rule-btn {
+    height: 1rem;
+    width: 10px;
+}
